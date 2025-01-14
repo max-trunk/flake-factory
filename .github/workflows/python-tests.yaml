@@ -34,12 +34,7 @@ jobs:
       - name: Run pytest tests
         uses: ./.github/actions/analytics-uploader-wrapper
         with:
-          token-staging: ${{ secrets.TRUNK_STAGING_ORG_API_TOKEN }}
-          token-prod: ${{ secrets.TRUNK_PROD_ORG_API_TOKEN }}
-          token-dev: ${{ secrets.TRUNK_DEV_ORG_API_TOKEN }}
-          token-dev2: ${{ secrets.TRUNK_DEV2_ORG_API_TOKEN }}
-          token-dev3: ${{ secrets.TRUNK_DEV3_ORG_API_TOKEN }}
-          token-dev4: ${{ secrets.TRUNK_DEV4_ORG_API_TOKEN }}
+          token-staging: ${{ secrets.MAX_TEST_ORG_API_TOKEN }}
           cli-version: ${{ inputs.cli-version }}
           junit-paths: "**/*_test.xml"
           run:
@@ -50,12 +45,7 @@ jobs:
         uses: ./.github/actions/analytics-uploader-wrapper
         if: ${{ always() }}
         with:
-          token-staging: ${{ secrets.TRUNK_STAGING_ORG_API_TOKEN }}
-          token-prod: ${{ secrets.TRUNK_PROD_ORG_API_TOKEN }}
-          token-dev: ${{ secrets.TRUNK_DEV_ORG_API_TOKEN }}
-          token-dev2: ${{ secrets.TRUNK_DEV2_ORG_API_TOKEN }}
-          token-dev3: ${{ secrets.TRUNK_DEV3_ORG_API_TOKEN }}
-          token-dev4: ${{ secrets.TRUNK_DEV4_ORG_API_TOKEN }}
+          token-staging: ${{ secrets.MAX_TEST_ORG_API_TOKEN }}
           cli-version: ${{ inputs.cli-version }}
           junit-paths: "**/*_test.xml"
           run:
