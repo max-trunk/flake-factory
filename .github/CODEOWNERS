@@ -1,5 +1,6 @@
 **/*.py                                         @sad-python-owner-bc-overridden
 **/*.py                                         @happy-python-owner
 python/pytest/random_test2.py                   @random-test2-owner friend-of-test2-owner+ohhhhhyeahhhhh@yahoohotmailoutlook.com
+python/pytest/random_test4.py                   @random-test3-owner friend-of-test3-owner+ohhhhhyeahhhhh@yahoohotmailoutlook.com @another-group @and-another @oh-and-one-moreeeeeeeeee
 python/pytest/nested/**                         @nested-owner
 python/pytest/nested/nested2/nested_test2.py
